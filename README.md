@@ -1,1 +1,8 @@
 # Breast-Cancer-Detection
+This project applies Logistic Regression, a supervised machine learning algorithm, to predict whether a breast tumor is benign or malignant based on medical features. The model is trained on the Wisconsin Breast Cancer Diagnostic Dataset, which includes 30 numerical attributes extracted from digitized images of fine needle aspirates (FNA) of breast masses. These features quantify characteristics like radius, texture, perimeter, and smoothness, each recorded as mean, standard error, and worst value.
+
+The dataset is first preprocessed by removing unnecessary columns, encoding labels (malignant as 1, benign as 0), and standardizing the feature values. An exploratory data analysis (EDA) step follows, using visualizations to understand feature distributions, relationships, and class balance.
+
+The core model uses Logistic Regression, which predicts the probability of malignancy using a linear combination of features passed through a sigmoid function. A threshold (typically 0.5) converts this probability into a binary classification. The model is trained on a portion of the data and evaluated on the remaining using metrics like accuracy, precision, recall, F1-score, and confusion matrix.
+
+One key benefit of Logistic Regression is its interpretability—each feature has an associated coefficient indicating its influence on the prediction. This transparency is particularly valuable in medical applications. Overall, the project demonstrates that even a simple, efficient model like Logistic Regression can deliver strong performance in early breast cancer detection, making it a reliable baseline for future clinical decision support systems.
